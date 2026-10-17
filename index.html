@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>Spatially Aligned Graph-Based Visuo-Tactile Fusion with Adaptive Gating for Dexterous Manipulation</title>
+  <meta name="description" content="A contact-aware 3D diffusion policy for dexterous manipulation. Explore real-robot videos, tactile observations, and results across 53 simulation tasks.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spatially Aligned Graph-Based Visuo-Tactile Fusion">
+  <meta property="og:description" content="Adaptive contact-aware fusion for dexterous manipulation. Real-robot demonstrations and 53-task benchmark results.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#main"><span class="brand-symbol" aria-hidden="true">✳</span> Visuo-Tactile Fusion <span class="brand-slash">/</span> Project</a>
+    <nav aria-label="Page navigation">
+      <a href="#real-world">Real robot</a><a href="#method">Method</a><a href="#benchmark">Benchmarks</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="paper-title">
+    <div class="eyebrow"><span class="status-dot"></span> DEXTEROUS MANIPULATION <span class="eyebrow-divider">/</span> VISUO-TACTILE LEARNING</div>
+    <h1 id="paper-title">Spatially Aligned Graph-Based<br class="desktop-break"> <em>Visuo-Tactile Fusion</em><br class="desktop-break"> with Adaptive Gating<br class="desktop-break"> for Dexterous Manipulation</h1>
+    <p class="hero-deck">Scene geometry meets localized contact.<br>A contact-aware 3D diffusion policy that learns when and where to use touch.</p>
+    <div class="hero-actions"><a class="button primary" href="#real-world">Explore demonstrations <span aria-hidden="true">↓</span></a><a class="button secondary" href="#benchmark">See the results <span aria-hidden="true">↗</span></a></div>
+    <div class="showcase-heading"><span><span class="live-dot"></span> ON THE REAL ROBOT</span><button id="hero-motion" class="text-button" type="button" aria-pressed="false">Pause previews <span aria-hidden="true">Ⅱ</span></button></div>
+    <div class="hero-mosaic">
+      <a href="#real-world" class="hero-tile" data-task-link="drawer"><video muted loop playsinline autoplay preload="none" poster="assets/posters/hero-drawer.jpg" data-src="assets/videos/hero-drawer.mp4" aria-label="Drawer manipulation preview"></video><span class="tile-caption"><span>01</span> Drawer manipulation <b aria-hidden="true">↗</b></span></a>
+      <a href="#real-world" class="hero-tile" data-task-link="pouring"><video muted loop playsinline autoplay preload="none" poster="assets/posters/hero-pouring.jpg" data-src="assets/videos/hero-pouring.mp4" aria-label="Glass-to-glass pouring preview"></video><span class="tile-caption"><span>02</span> Glass-to-glass pouring <b aria-hidden="true">↗</b></span></a>
+      <a href="#real-world" class="hero-tile" data-task-link="plug"><video muted loop playsinline autoplay preload="none" poster="assets/posters/hero-plug.jpg" data-src="assets/videos/hero-plug.mp4" aria-label="Plug insertion preview"></video><span class="tile-caption"><span>03</span> Plug insertion <b aria-hidden="true">↗</b></span></a>
+      <a href="#real-world" class="hero-tile" data-task-link="pick"><video muted loop playsinline autoplay preload="none" poster="assets/posters/hero-pick-place.jpg" data-src="assets/videos/hero-pick-place.mp4" aria-label="Pick-and-place preview"></video><span class="tile-caption"><span>04</span> Pick-and-place <b aria-hidden="true">↗</b></span></a>
+    </div>
+    <p class="media-note">Selected rollout excerpts. Full recordings and tactile observations below.</p>
+    <div class="metrics">
+      <div><span class="metric-value">53</span><span class="metric-label">simulation tasks</span><span class="metric-note">Adroit + Meta-World</span></div>
+      <div><span class="metric-value">80.3<span>%</span></span><span class="metric-label">average simulation SR5</span><span class="metric-note">+4.7 pp over AdapTac</span></div>
+      <div><span class="metric-value">52.5<span>%</span></span><span class="metric-label">mean real-robot success</span><span class="metric-note">+10.0 pp over AdapTac</span></div>
+      <div><span class="metric-value">1,062</span><span class="metric-label">distributed hand taxels</span><span class="metric-note">Spatially resolved contact</span></div>
+    </div>
+  </section>
+
+  <section class="section intro-section" aria-labelledby="overview-heading">
+    <div class="wrap editorial-grid">
+      <div><p class="section-number">THE IDEA / 01</p><h2 id="overview-heading">See the scene.<br><em>Feel the contact.</em></h2></div>
+      <div class="intro-copy"><p class="lead">Vision describes the scene. Touch reveals the local interactions that vision can miss.</p><p>Occlusion, transparent objects, and small contact interfaces make dexterous manipulation difficult. Our policy places scene points and hand taxels in a common 3D coordinate frame, preserves tactile geometry with a graph encoder, and selectively fuses active contacts into the visual representation.</p><p>A training-only spatial contrastive objective aligns the two modalities. The fused features and proprioception condition a diffusion policy that generates action sequences.</p><a class="inline-link" href="#method">Inside the policy <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="real-world" aria-labelledby="real-heading">
+    <div class="section-top"><div><p class="section-number">REAL-WORLD DEMONSTRATIONS / 02</p><h2 id="real-heading">From perception<br>to <em>physical interaction.</em></h2></div><p class="section-summary">Four manipulation tasks on a dexterous arm–hand platform. Explore camera recordings alongside the tactile observation view.</p></div>
+    <div class="task-tabs" role="tablist" aria-label="Real-robot task">
+      <button type="button" role="tab" id="tab-drawer" aria-selected="true" aria-controls="task-panel" tabindex="0" data-task="drawer">01 <span>Drawer</span></button>
+      <button type="button" role="tab" id="tab-pouring" aria-selected="false" aria-controls="task-panel" tabindex="-1" data-task="pouring">02 <span>Pouring</span></button>
+      <button type="button" role="tab" id="tab-plug" aria-selected="false" aria-controls="task-panel" tabindex="-1" data-task="plug">03 <span>Plug insertion</span></button>
+      <button type="button" role="tab" id="tab-pick" aria-selected="false" aria-controls="task-panel" tabindex="-1" data-task="pick">04 <span>Pick-and-place</span></button>
+    </div>
+    <div id="task-panel" role="tabpanel" aria-labelledby="tab-drawer">
+      <div class="task-stage">
+        <div class="camera-player"><div class="player-top"><span><i class="camera-icon" aria-hidden="true"></i> ROBOT CAMERA VIEW</span><label>Recording <select id="camera-take" aria-label="Camera recording"></select></label></div><video id="camera-video" controls muted playsinline preload="none" poster="assets/posters/drawer-02.jpg" aria-label="Drawer manipulation camera recording"></video></div>
+        <aside class="task-story"><span class="task-category" id="task-category">SEQUENTIAL MANIPULATION</span><h3 id="task-name">Drawer manipulation</h3><p id="task-description">Open the drawer, transfer the red block inside, and close it. The handle faces away from the camera, making contact localization important.</p><div class="task-stat"><strong id="task-success">18<span>/30</span></strong><div>successful trials<span>Proposed policy</span></div></div><div class="task-challenge"><span>CONTACT CHALLENGE</span><p id="task-challenge">Visually occluded handle and multi-stage interaction.</p></div></aside>
+      </div>
+      <div class="tactile-player"><div class="player-top"><span><span class="heatmap-icon" aria-hidden="true">▦</span> VISION + TACTILE OBSERVATIONS</span><label>Recording <select id="tactile-take" aria-label="Tactile observation recording"></select></label></div><video id="tactile-video" controls muted playsinline preload="none" poster="assets/posters/drawer-contact-01.jpg" aria-label="Drawer vision and tactile observation recording"></video></div>
+      <p class="media-note">Camera and tactile recordings are separate rollouts; playback is independent. All recordings are silent.</p>
+    </div>
+    <details class="platform-details"><summary><span>Experimental platform</span><span>CGX C6 · Inspire RH56DFTP · Orbbec Femto Mega <b aria-hidden="true">+</b></span></summary><div class="platform-content"><img src="assets/figures/platform.webp" loading="lazy" width="1600" height="626" alt="Real-robot platform with RGB-D scene observations and distributed tactile observations"><p>A CGX C6 arm with an Inspire Robots RH56DFTP tactile hand and an Orbbec Femto Mega RGB-D camera. The hand supplies 1,062 distributed taxels. Each task uses 40 expert demonstrations, one training seed per method, and 30 evaluation trials.</p></div></details>
+  </section>
+
+  <section class="section method-section" id="method" aria-labelledby="method-heading">
+    <div class="wrap">
+      <div class="section-top"><div><p class="section-number">METHOD / 03</p><h2 id="method-heading">Aligned in space.<br><em>Selective by contact.</em></h2></div><p class="section-summary">A compact visual representation meets a spatial graph of tactile contacts, followed by adaptive fusion and action diffusion.</p></div>
+      <div class="method-steps">
+        <article><span class="step-index">01 / ENCODE</span><h3>Preserve contact geometry</h3><p>PointNet encodes the scene. A spatial KNN graph encoder retains a feature for every taxel, using its force and 3D position.</p></article>
+        <article><span class="step-index">02 / FUSE</span><h3>Use the active contacts</h3><p>Contact-masked gated cross-attention (CMGCA) selects force-activated taxels. A channel-wise gate controls their residual contribution to vision.</p></article>
+        <article><span class="step-index">03 / ACT</span><h3>Generate an action sequence</h3><p>The fused representation and proprioception condition a 1D diffusion policy. Spatial contrastive alignment is used only during training.</p></article>
+      </div>
+      <figure class="framework-figure"><a href="assets/figures/framework.webp" target="_blank" rel="noopener" aria-label="Open full-size policy architecture diagram"><img src="assets/figures/framework.webp" loading="lazy" width="1798" height="879" alt="Policy architecture: point cloud, tactile graph, and state encoders feed contact-masked gated cross-attention and a conditional diffusion policy; contrastive alignment is training-only"></a><figcaption><span>POLICY ARCHITECTURE</span> Graph encoding, contact-masked adaptive fusion, and training-only alignment. <a href="assets/figures/framework.webp" target="_blank" rel="noopener">View full size ↗</a></figcaption></figure>
+      <div class="method-insight"><span class="insight-icon" aria-hidden="true">↳</span><p><strong>No active contact? The visual representation passes through.</strong> With no valid contact, the tactile correction is zero. Contrastive projection heads are removed at inference.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="benchmark" aria-labelledby="benchmark-heading">
+    <div class="section-top"><div><p class="section-number">SIMULATION / 04</p><h2 id="benchmark-heading">Tested across<br><em>53 manipulation tasks.</em></h2></div><p class="section-summary">Three Adroit tasks and all 50 Meta-World tasks. Ten demonstrations per task, three training seeds, and the same evaluation protocol across methods.</p></div>
+    <div class="simulation-heading"><h3>Benchmark rollouts</h3><button class="text-button" id="sim-motion" type="button" aria-pressed="false">Pause all <span aria-hidden="true">Ⅱ</span></button></div>
+    <div id="simulation-gallery" class="simulation-grid" aria-label="Eight simulation rollout videos"></div>
+    <p class="media-note">Selected simulation recordings. Videos loop independently.</p>
+    <div class="results-panel">
+      <div class="results-header"><div><span class="small-label">COMPARISON WITH BASELINES</span><h3>Where touch makes a difference.</h3></div><label class="chart-label">Benchmark group<select id="chart-group"><option value="5">All 53 tasks</option value="0">Adroit · 3 tasks</option><option value="1">Meta-World Easy · 28 tasks</option><option value="2">Meta-World Medium · 11 tasks</option><option value="3">Meta-World Hard · 6 tasks</option><option value="4">Meta-World Very Hard · 5 tasks</option></select></label></div>
+      <div id="benchmark-chart" class="bar-chart" role="img" aria-label="Average SR5: DP 68.5, DP3 72.4, 3D-ViTac 73.6, AdapTac 75.6, Ours 80.3 percent"></div>
+      <div class="chart-axis" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>100%</span></div>
+      <p class="chart-note">SR5 (%) · Mean ± population SD across three seeds. Whiskers show one SD.</p>
+    </div>
+    <details class="protocol"><summary>How to read these results <span aria-hidden="true">+</span></summary><div><p><strong>SR5</strong> averages the five best checkpoint success rates within each training run; the reported mean and population standard deviation are then computed across three seeds. Every checkpoint is evaluated over 20 episodes, and each method is trained for 2,000 epochs with 10 demonstrations per task.</p><p>The overall 53-task average is task-weighted. These are best-five-checkpoint results, rather than final-checkpoint success rates. Gains are concentrated in Adroit and the harder Meta-World groups; DP3 has the highest Easy-group mean (91.2%).</p></div></details>
+    <div class="task-results-heading"><div><span class="small-label">THE COMPLETE PICTURE</span><h3>Every task. Every baseline.</h3></div><span class="best-key"><i></i> Best mean in each row</span></div>
+    <div class="table-controls"><label><span>Search tasks</span><input id="task-search" type="search" placeholder="Find a task…"></label><label><span>Task group</span><select id="task-filter"><option value="all">All benchmarks</option><option>Adroit</option><option>Meta-World / Easy</option><option>Meta-World / Medium</option><option>Meta-World / Hard</option><option>Meta-World / Very Hard</option></select></label><label><span>Order</span><select id="task-sort"><option value="source">Benchmark order</option><option value="gain">Gain over AdapTac</option><option value="name">Task name</option></select></label></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Task-level simulation results; scroll horizontally on small screens"><table id="task-results"><caption class="sr-only">Task-level simulation SR5 percentages, mean plus or minus standard deviation across three seeds.</caption><thead><tr><th scope="col">Benchmark / Task</th><th scope="col">DP</th><th scope="col">DP3</th><th scope="col">3D-ViTac</th><th scope="col">AdapTac</th><th scope="col" class="ours-col">Ours</th></tr></thead><tbody id="task-rows"></tbody></table></div>
+    <div class="table-footer"><p id="table-count" aria-live="polite"></p><button class="button secondary" id="show-tasks" type="button">Show all 53 tasks <span aria-hidden="true">↓</span></button></div>
+    <p id="results-error" role="alert" hidden>Results could not be loaded. Please refresh the page to try again.</p>
+  </section>
+
+  <section class="section real-results-section" aria-labelledby="real-results-heading"><div class="wrap">
+    <div class="section-top"><div><p class="section-number">REAL-ROBOT EVALUATION / 05</p><h2 id="real-results-heading">Measured beyond<br><em>the simulator.</em></h2></div><p class="section-summary">Thirty trials per method and task. The proposed policy reaches 52.5% mean success across four real-robot tasks.</p></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Real-robot success results"><table class="real-table"><caption class="sr-only">Successful trials out of 30 and mean success percentage across four tasks.</caption><thead><tr><th scope="col">Method</th><th scope="col">Pick-and-place</th><th scope="col">Drawer</th><th scope="col">Plug insertion</th><th scope="col">Pouring</th><th scope="col">Mean (%)</th></tr></thead><tbody>
+      <tr><th scope="row">DP</th><td>8/30</td><td>3/30</td><td>3/30</td><td>12/30</td><td>21.7</td></tr>
+      <tr><th scope="row">DP3</th><td>12/30</td><td>7/30</td><td>2/30</td><td>8/30</td><td>24.2</td></tr>
+      <tr><th scope="row">3D-ViTac</th><td class="best">15/30</td><td>13/30</td><td>4/30</td><td>14/30</td><td>38.3</td></tr>
+      <tr><th scope="row">AdapTac</th><td>14/30</td><td>16/30</td><td>5/30</td><td>16/30</td><td>42.5</td></tr>
+      <tr class="ours-row"><th scope="row">Ours</th><td class="best">15/30</td><td class="best">18/30</td><td class="best">9/30</td><td class="best">21/30</td><td class="best">52.5</td></tr>
+    </tbody></table></div>
+    <div class="evaluation-note"><p><strong>Reading the evidence.</strong> Results use one training seed per method and task; comparisons are descriptive. Precise insertion remains challenging, with 9/30 successes. The videos show selected rollouts.</p><p><strong>Cumulative ablations.</strong> Average simulation SR5 decreases from 80.3% to 78.4% without contrastive training, to 76.6% after additionally replacing CMGCA with concatenation, and to 72.8% after also replacing the GNN with an MLP.</p></div>
+  </div></section>
+  <section class="closing wrap"><span class="brand-symbol" aria-hidden="true">✳</span><p>Learning dexterous manipulation<br>through <em>vision and touch.</em></p><a class="inline-link" href="#real-world">Explore demonstrations <span aria-hidden="true">↑</span></a></section>
+</main>
+<footer class="site-footer wrap"><p>Supplementary project page</p><a href="#main">Back to top ↑</a></footer>
+<dialog id="simulation-dialog" aria-labelledby="simulation-dialog-title"><div class="dialog-top"><span id="simulation-dialog-title">Simulation recording</span><button type="button" id="close-simulation">Close ×</button></div><video controls muted loop playsinline aria-label="Expanded simulation recording"></video></dialog>
+<noscript><div class="noscript-notice">Enable JavaScript to explore task recordings and the full benchmark table. Static method and real-robot results remain available.</div></noscript>
+</body>
+</html>

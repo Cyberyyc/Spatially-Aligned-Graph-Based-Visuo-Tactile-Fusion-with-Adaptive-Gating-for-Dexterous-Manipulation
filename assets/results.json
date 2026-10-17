@@ -1,0 +1,1521 @@
+{
+  "models": [
+    "DP",
+    "DP3",
+    "3D-ViTac",
+    "AdapTac",
+    "Ours"
+  ],
+  "tasks": [
+    {
+      "task": "Hammer",
+      "group": "Adroit",
+      "values": {
+        "DP": [
+          96.8,
+          0.2
+        ],
+        "DP3": [
+          99.2,
+          0.8
+        ],
+        "3D-ViTac": [
+          86.7,
+          1.0
+        ],
+        "AdapTac": [
+          90.2,
+          2.6
+        ],
+        "Ours": [
+          98.2,
+          0.8
+        ]
+      }
+    },
+    {
+      "task": "Door",
+      "group": "Adroit",
+      "values": {
+        "DP": [
+          48.6,
+          4.1
+        ],
+        "DP3": [
+          54.7,
+          2.9
+        ],
+        "3D-ViTac": [
+          59.1,
+          7.2
+        ],
+        "AdapTac": [
+          69.9,
+          3.8
+        ],
+        "Ours": [
+          80.9,
+          8.2
+        ]
+      }
+    },
+    {
+      "task": "Pen",
+      "group": "Adroit",
+      "values": {
+        "DP": [
+          45.7,
+          4.9
+        ],
+        "DP3": [
+          50.8,
+          8.0
+        ],
+        "3D-ViTac": [
+          48.0,
+          2.3
+        ],
+        "AdapTac": [
+          63.0,
+          3.3
+        ],
+        "Ours": [
+          70.8,
+          3.1
+        ]
+      }
+    },
+    {
+      "task": "Button Press",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.2,
+          1.9
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Button Press Topdown",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          88.7,
+          1.5
+        ],
+        "DP3": [
+          91.9,
+          0.9
+        ],
+        "3D-ViTac": [
+          97.1,
+          4.1
+        ],
+        "AdapTac": [
+          96.7,
+          4.7
+        ],
+        "Ours": [
+          94.7,
+          3.4
+        ]
+      }
+    },
+    {
+      "task": "Button Press Topdown Wall",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          91.0,
+          6.2
+        ],
+        "DP3": [
+          93.0,
+          6.2
+        ],
+        "3D-ViTac": [
+          95.0,
+          3.8
+        ],
+        "AdapTac": [
+          95.2,
+          3.5
+        ],
+        "Ours": [
+          96.2,
+          2.8
+        ]
+      }
+    },
+    {
+      "task": "Button Press Wall",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.3,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Coffee Button",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.3,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Dial Turn",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          65.6,
+          6.8
+        ],
+        "DP3": [
+          68.8,
+          6.4
+        ],
+        "3D-ViTac": [
+          72.4,
+          8.2
+        ],
+        "AdapTac": [
+          73.2,
+          10.4
+        ],
+        "Ours": [
+          71.4,
+          5.4
+        ]
+      }
+    },
+    {
+      "task": "Door Close",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.2,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          99.1,
+          1.3
+        ],
+        "AdapTac": [
+          98.7,
+          1.9
+        ],
+        "Ours": [
+          99.0,
+          1.4
+        ]
+      }
+    },
+    {
+      "task": "Door Lock",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          95.0,
+          3.7
+        ],
+        "DP3": [
+          97.4,
+          3.7
+        ],
+        "3D-ViTac": [
+          97.1,
+          4.1
+        ],
+        "AdapTac": [
+          97.0,
+          4.2
+        ],
+        "Ours": [
+          97.0,
+          4.2
+        ]
+      }
+    },
+    {
+      "task": "Door Open",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.2,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Door Unlock",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.7,
+          1.6
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          96.7,
+          2.5
+        ],
+        "AdapTac": [
+          96.5,
+          2.6
+        ],
+        "Ours": [
+          97.7,
+          3.3
+        ]
+      }
+    },
+    {
+      "task": "Drawer Close",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.4,
+          1.9
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Drawer Open",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          95.5,
+          2.8
+        ],
+        "DP3": [
+          97.8,
+          3.1
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Faucet Close",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.4,
+          2.6
+        ],
+        "DP3": [
+          98.0,
+          2.8
+        ],
+        "3D-ViTac": [
+          94.9,
+          4.4
+        ],
+        "AdapTac": [
+          94.2,
+          3.0
+        ],
+        "Ours": [
+          94.8,
+          4.8
+        ]
+      }
+    },
+    {
+      "task": "Faucet Open",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.7,
+          1.7
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Handle Press",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          94.7,
+          3.0
+        ],
+        "DP3": [
+          97.5,
+          3.6
+        ],
+        "3D-ViTac": [
+          97.0,
+          4.2
+        ],
+        "AdapTac": [
+          96.7,
+          4.7
+        ],
+        "Ours": [
+          96.7,
+          4.7
+        ]
+      }
+    },
+    {
+      "task": "Handle Press Side",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          79.5,
+          11.2
+        ],
+        "DP3": [
+          82.5,
+          11.7
+        ],
+        "3D-ViTac": [
+          70.8,
+          6.2
+        ],
+        "AdapTac": [
+          72.7,
+          3.3
+        ],
+        "Ours": [
+          79.8,
+          8.0
+        ]
+      }
+    },
+    {
+      "task": "Handle Pull",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          50.7,
+          8.0
+        ],
+        "DP3": [
+          53.4,
+          8.5
+        ],
+        "3D-ViTac": [
+          35.9,
+          2.9
+        ],
+        "AdapTac": [
+          38.4,
+          1.2
+        ],
+        "Ours": [
+          49.0,
+          6.5
+        ]
+      }
+    },
+    {
+      "task": "Handle Pull Side",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          87.9,
+          7.0
+        ],
+        "DP3": [
+          91.7,
+          6.8
+        ],
+        "3D-ViTac": [
+          81.6,
+          7.4
+        ],
+        "AdapTac": [
+          79.5,
+          7.9
+        ],
+        "Ours": [
+          87.7,
+          4.2
+        ]
+      }
+    },
+    {
+      "task": "Lever Pull",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          65.3,
+          2.7
+        ],
+        "DP3": [
+          68.2,
+          2.7
+        ],
+        "3D-ViTac": [
+          71.9,
+          9.0
+        ],
+        "AdapTac": [
+          74.2,
+          6.2
+        ],
+        "Ours": [
+          78.2,
+          3.1
+        ]
+      }
+    },
+    {
+      "task": "Plate Slide",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.2,
+          2.6
+        ],
+        "DP3": [
+          98.1,
+          2.7
+        ],
+        "3D-ViTac": [
+          97.7,
+          3.3
+        ],
+        "AdapTac": [
+          97.7,
+          3.3
+        ],
+        "Ours": [
+          97.2,
+          4.0
+        ]
+      }
+    },
+    {
+      "task": "Plate Slide Back",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.7,
+          1.9
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Plate Slide Back Side",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.9,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Plate Slide Side",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.9,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Reach",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          48.8,
+          6.1
+        ],
+        "DP3": [
+          52.5,
+          6.5
+        ],
+        "3D-ViTac": [
+          35.9,
+          2.5
+        ],
+        "AdapTac": [
+          35.4,
+          3.6
+        ],
+        "Ours": [
+          36.2,
+          3.9
+        ]
+      }
+    },
+    {
+      "task": "Reach Wall",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          80.7,
+          5.4
+        ],
+        "DP3": [
+          83.5,
+          5.4
+        ],
+        "3D-ViTac": [
+          84.6,
+          4.9
+        ],
+        "AdapTac": [
+          86.4,
+          7.5
+        ],
+        "Ours": [
+          86.7,
+          6.5
+        ]
+      }
+    },
+    {
+      "task": "Window Close",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          97.2,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Window Open",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          96.9,
+          1.8
+        ],
+        "DP3": [
+          98.6,
+          1.9
+        ],
+        "3D-ViTac": [
+          98.5,
+          2.2
+        ],
+        "AdapTac": [
+          98.4,
+          2.3
+        ],
+        "Ours": [
+          98.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "task": "Peg Unplug Side",
+      "group": "Meta-World / Easy",
+      "values": {
+        "DP": [
+          95.0,
+          3.3
+        ],
+        "DP3": [
+          97.4,
+          3.7
+        ],
+        "3D-ViTac": [
+          79.6,
+          11.7
+        ],
+        "AdapTac": [
+          90.1,
+          3.5
+        ],
+        "Ours": [
+          81.7,
+          9.1
+        ]
+      }
+    },
+    {
+      "task": "Basketball",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          79.6,
+          4.1
+        ],
+        "DP3": [
+          84.6,
+          3.9
+        ],
+        "3D-ViTac": [
+          87.2,
+          6.3
+        ],
+        "AdapTac": [
+          87.4,
+          6.5
+        ],
+        "Ours": [
+          92.5,
+          1.8
+        ]
+      }
+    },
+    {
+      "task": "Bin Picking",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          16.2,
+          10.7
+        ],
+        "DP3": [
+          20.8,
+          11.0
+        ],
+        "3D-ViTac": [
+          26.8,
+          16.5
+        ],
+        "AdapTac": [
+          41.1,
+          14.4
+        ],
+        "Ours": [
+          32.2,
+          2.3
+        ]
+      }
+    },
+    {
+      "task": "Box Close",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          47.7,
+          4.9
+        ],
+        "DP3": [
+          52.7,
+          7.3
+        ],
+        "3D-ViTac": [
+          45.3,
+          5.2
+        ],
+        "AdapTac": [
+          45.3,
+          4.6
+        ],
+        "Ours": [
+          55.4,
+          6.1
+        ]
+      }
+    },
+    {
+      "task": "Coffee Pull",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          67.4,
+          5.5
+        ],
+        "DP3": [
+          71.6,
+          5.6
+        ],
+        "3D-ViTac": [
+          58.9,
+          8.3
+        ],
+        "AdapTac": [
+          65.8,
+          5.9
+        ],
+        "Ours": [
+          78.9,
+          12.2
+        ]
+      }
+    },
+    {
+      "task": "Coffee Push",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          39.1,
+          3.3
+        ],
+        "DP3": [
+          43.5,
+          3.9
+        ],
+        "3D-ViTac": [
+          79.7,
+          2.9
+        ],
+        "AdapTac": [
+          80.0,
+          2.9
+        ],
+        "Ours": [
+          88.7,
+          3.7
+        ]
+      }
+    },
+    {
+      "task": "Hammer",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          76.1,
+          5.0
+        ],
+        "DP3": [
+          80.2,
+          5.0
+        ],
+        "3D-ViTac": [
+          86.6,
+          1.4
+        ],
+        "AdapTac": [
+          89.0,
+          3.5
+        ],
+        "Ours": [
+          91.2,
+          1.1
+        ]
+      }
+    },
+    {
+      "task": "Peg Insert Side",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          22.2,
+          5.7
+        ],
+        "DP3": [
+          41.1,
+          12.4
+        ],
+        "3D-ViTac": [
+          64.7,
+          4.7
+        ],
+        "AdapTac": [
+          45.7,
+          2.0
+        ],
+        "Ours": [
+          87.3,
+          2.2
+        ]
+      }
+    },
+    {
+      "task": "Push Wall",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          75.0,
+          4.5
+        ],
+        "DP3": [
+          80.2,
+          3.1
+        ],
+        "3D-ViTac": [
+          76.8,
+          9.4
+        ],
+        "AdapTac": [
+          78.7,
+          4.0
+        ],
+        "Ours": [
+          83.9,
+          3.8
+        ]
+      }
+    },
+    {
+      "task": "Soccer",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          11.7,
+          3.2
+        ],
+        "DP3": [
+          15.1,
+          2.8
+        ],
+        "3D-ViTac": [
+          7.0,
+          3.8
+        ],
+        "AdapTac": [
+          10.0,
+          2.7
+        ],
+        "Ours": [
+          15.9,
+          2.6
+        ]
+      }
+    },
+    {
+      "task": "Sweep",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          74.4,
+          7.1
+        ],
+        "DP3": [
+          79.6,
+          6.1
+        ],
+        "3D-ViTac": [
+          88.3,
+          3.2
+        ],
+        "AdapTac": [
+          89.5,
+          4.3
+        ],
+        "Ours": [
+          92.1,
+          2.3
+        ]
+      }
+    },
+    {
+      "task": "Sweep Into",
+      "group": "Meta-World / Medium",
+      "values": {
+        "DP": [
+          4.1,
+          4.2
+        ],
+        "DP3": [
+          10.0,
+          11.1
+        ],
+        "3D-ViTac": [
+          29.5,
+          13.9
+        ],
+        "AdapTac": [
+          44.4,
+          6.7
+        ],
+        "Ours": [
+          60.9,
+          20.4
+        ]
+      }
+    },
+    {
+      "task": "Assembly",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          85.5,
+          4.8
+        ],
+        "DP3": [
+          88.5,
+          4.1
+        ],
+        "3D-ViTac": [
+          97.0,
+          2.1
+        ],
+        "AdapTac": [
+          97.9,
+          2.3
+        ],
+        "Ours": [
+          97.4,
+          3.0
+        ]
+      }
+    },
+    {
+      "task": "Hand Insert",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          2.1,
+          1.4
+        ],
+        "DP3": [
+          22.8,
+          5.7
+        ],
+        "3D-ViTac": [
+          25.6,
+          3.6
+        ],
+        "AdapTac": [
+          28.7,
+          3.9
+        ],
+        "Ours": [
+          51.9,
+          7.9
+        ]
+      }
+    },
+    {
+      "task": "Pick Out Of Hole",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          18.5,
+          12.5
+        ],
+        "DP3": [
+          22.3,
+          14.6
+        ],
+        "3D-ViTac": [
+          27.8,
+          6.8
+        ],
+        "AdapTac": [
+          27.2,
+          4.9
+        ],
+        "Ours": [
+          37.2,
+          3.3
+        ]
+      }
+    },
+    {
+      "task": "Pick Place",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          28.2,
+          10.6
+        ],
+        "DP3": [
+          38.0,
+          12.2
+        ],
+        "3D-ViTac": [
+          52.5,
+          7.1
+        ],
+        "AdapTac": [
+          67.0,
+          2.8
+        ],
+        "Ours": [
+          81.8,
+          3.8
+        ]
+      }
+    },
+    {
+      "task": "Push",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          54.0,
+          4.1
+        ],
+        "DP3": [
+          57.8,
+          3.2
+        ],
+        "3D-ViTac": [
+          42.1,
+          3.8
+        ],
+        "AdapTac": [
+          45.5,
+          3.9
+        ],
+        "Ours": [
+          53.8,
+          1.6
+        ]
+      }
+    },
+    {
+      "task": "Push Back",
+      "group": "Meta-World / Hard",
+      "values": {
+        "DP": [
+          39.4,
+          12.1
+        ],
+        "DP3": [
+          45.0,
+          11.5
+        ],
+        "3D-ViTac": [
+          57.7,
+          8.8
+        ],
+        "AdapTac": [
+          62.0,
+          9.2
+        ],
+        "Ours": [
+          77.4,
+          8.7
+        ]
+      }
+    },
+    {
+      "task": "Shelf Place",
+      "group": "Meta-World / Very Hard",
+      "values": {
+        "DP": [
+          15.0,
+          2.2
+        ],
+        "DP3": [
+          17.5,
+          2.6
+        ],
+        "3D-ViTac": [
+          8.6,
+          3.4
+        ],
+        "AdapTac": [
+          13.9,
+          6.7
+        ],
+        "Ours": [
+          15.7,
+          5.8
+        ]
+      }
+    },
+    {
+      "task": "Disassemble",
+      "group": "Meta-World / Very Hard",
+      "values": {
+        "DP": [
+          48.7,
+          0.9
+        ],
+        "DP3": [
+          51.6,
+          0.8
+        ],
+        "3D-ViTac": [
+          48.1,
+          9.0
+        ],
+        "AdapTac": [
+          52.1,
+          7.8
+        ],
+        "Ours": [
+          61.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "task": "Stick Pull",
+      "group": "Meta-World / Very Hard",
+      "values": {
+        "DP": [
+          24.3,
+          5.2
+        ],
+        "DP3": [
+          32.9,
+          6.7
+        ],
+        "3D-ViTac": [
+          50.1,
+          10.2
+        ],
+        "AdapTac": [
+          47.1,
+          6.7
+        ],
+        "Ours": [
+          61.7,
+          5.2
+        ]
+      }
+    },
+    {
+      "task": "Stick Push",
+      "group": "Meta-World / Very Hard",
+      "values": {
+        "DP": [
+          65.7,
+          8.6
+        ],
+        "DP3": [
+          69.0,
+          8.1
+        ],
+        "3D-ViTac": [
+          88.8,
+          2.4
+        ],
+        "AdapTac": [
+          89.9,
+          2.9
+        ],
+        "Ours": [
+          91.7,
+          2.6
+        ]
+      }
+    },
+    {
+      "task": "Pick Place Wall",
+      "group": "Meta-World / Very Hard",
+      "values": {
+        "DP": [
+          49.9,
+          2.3
+        ],
+        "DP3": [
+          53.0,
+          2.4
+        ],
+        "3D-ViTac": [
+          67.1,
+          6.5
+        ],
+        "AdapTac": [
+          70.7,
+          7.9
+        ],
+        "Ours": [
+          72.2,
+          7.5
+        ]
+      }
+    }
+  ],
+  "aggregate": {
+    "DP": [
+      [
+        63.7,
+        2.8
+      ],
+      [
+        89.0,
+        2.8
+      ],
+      [
+        46.7,
+        2.2
+      ],
+      [
+        38.0,
+        2.7
+      ],
+      [
+        40.7,
+        2.7
+      ],
+      [
+        68.5,
+        2.4
+      ]
+    ],
+    "DP3": [
+      [
+        68.2,
+        3.5
+      ],
+      [
+        91.2,
+        3.0
+      ],
+      [
+        52.7,
+        2.3
+      ],
+      [
+        45.7,
+        3.1
+      ],
+      [
+        44.8,
+        2.8
+      ],
+      [
+        72.4,
+        2.1
+      ]
+    ],
+    "3D-ViTac": [
+      [
+        64.6,
+        3.1
+      ],
+      [
+        88.9,
+        3.2
+      ],
+      [
+        59.2,
+        2.1
+      ],
+      [
+        50.4,
+        3.5
+      ],
+      [
+        52.5,
+        3.0
+      ],
+      [
+        73.6,
+        3.0
+      ]
+    ],
+    "AdapTac": [
+      [
+        74.3,
+        3.1
+      ],
+      [
+        89.4,
+        3.1
+      ],
+      [
+        61.5,
+        2.1
+      ],
+      [
+        54.7,
+        3.3
+      ],
+      [
+        54.7,
+        3.0
+      ],
+      [
+        75.6,
+        2.9
+      ]
+    ],
+    "Ours": [
+      [
+        83.3,
+        3.8
+      ],
+      [
+        90.1,
+        3.2
+      ],
+      [
+        70.8,
+        2.8
+      ],
+      [
+        66.6,
+        3.4
+      ],
+      [
+        60.5,
+        3.2
+      ],
+      [
+        80.3,
+        2.2
+      ]
+    ]
+  }
+}
