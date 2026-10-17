@@ -10,4 +10,4 @@ Supplementary project website for a contact-aware 3D visuo-tactile diffusion pol
 - Eight simulation recordings.
 - Interactive comparisons across 53 simulation tasks and four real-robot tasks.
 
-The manuscript PDF and manuscript sources are not included.
+
